@@ -61,39 +61,40 @@ function Navbar() {
     <div>
       <div>
         {/* CTA */}
-        <div className="flex justify-between  px-14 mt-2">
-          <div className="flex gap-x-10">
-            <p className="hover:text-themeColor cursor-pointer">
+        <div className="flex flex-col items-center md:flex-row md:justify-between px-4 md:px-14 mt-2">
+          <div className="flex flex-col md:flex-row md:items-center md:gap-x-10">
+            <p className="hover:text-themeColor cursor-pointer flex items-center">
               <i className="pi pi-question-circle mr-2 "></i>
               Can we help you?
             </p>
-            <p className="hover:text-themeColor cursor-pointer">
+            <p className="hover:text-themeColor cursor-pointer flex items-center">
               <i className="pi pi-phone mr-2"></i>+1 246-345-0695
             </p>
           </div>
-          <div className="flex gap-x-2">
-            <p className="hover:text-themeColor cursor-pointer px-4">
+          <div className="flex gap-x-4 md:gap-x-2">
+            <p className="hover:text-themeColor cursor-pointer px-2 md:px-4 flex items-center">
               <i className="pi pi-map-marker"></i>
             </p>
-            <p className="hover:text-themeColor cursor-pointer px-4">
+            <p className="hover:text-themeColor cursor-pointer px-2 md:px-4 flex items-center">
               <i className="pi pi-heart"></i>
             </p>
-            <p className="hover:text-themeColor cursor-pointer px-4">
+            <p className="hover:text-themeColor cursor-pointer px-2 md:px-4 flex items-center">
               <i className="pi pi-user"></i>
             </p>
-            <p className="hover:text-themeColor cursor-pointer px-4">
+            <p className="hover:text-themeColor cursor-pointer px-2 md:px-4 flex items-center">
               <i className="pi pi-shopping-cart"></i>
             </p>
           </div>
         </div>
         <div className="border-t mt-2"></div>
+
         {/* Navbar */}
         <div>
           <Menubar
             model={navItems}
             start={start}
             end={end}
-            className="!bg-white !w-full border-r-0 border-l-0 border-t-0 px-14"
+            className="!bg-white !w-full border-r-0 border-l-0 border-t-0 px-2 md:px-14 "
           />
         </div>
       </div>

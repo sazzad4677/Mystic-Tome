@@ -1,5 +1,13 @@
+import Featured from "../components/Featured";
+import Hero from "../components/Hero";
+
 const Home = () => {
-  return <div></div>;
+  return (
+    <div>
+      <Hero />
+      <Featured />
+    </div>
+  );
 };
 
 export default Home;

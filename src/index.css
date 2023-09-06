@@ -1,3 +1,7 @@
+:root {
+  --themeColor: #ee5253;
+  --secondaryColor: #f8eaec;
+}
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300&display=swap");
 @tailwind base;
 @tailwind components;
@@ -10,4 +14,19 @@
   .autoCompleteInput input {
     @apply w-full !bg-gray-50 focus:!border-themeColor hover:!border-themeColor !shadow-none;
   }
+}
+
+.swiper-button-prev {
+  color: var(--themeColor) !important;
+}
+
+.swiper-button-next {
+  color: var(--themeColor) !important;
+}
+
+/* Optionally, change the color of the active bullet or button */
+.swiper-pagination-bullet-active {
+  background-color: var(--themeColor) !important;
+  border: black !important;
+  padding: 2px;
 }
