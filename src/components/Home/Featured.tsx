@@ -1,25 +1,30 @@
+import { CiMedicalCase } from "react-icons/ci";
+import { GiLoveMystery, GiMaterialsScience } from "react-icons/gi";
+import { IoImagesOutline } from "react-icons/io5";
+
 const Featured = () => {
   const categories = [
     {
       title: "Arts and Photography",
-      icon: "pi pi-images",
-      iconColor: "#A54FF7",
-      backgroundColor: "#FAF1FE",
+      icon: (
+        <IoImagesOutline className="text-5xl text-[#A54FF7]"></IoImagesOutline>
+      ),
+      backgroundColor: "bg-[#FAF1FE]",
     },
     {
-      title: "Food an",
-      icon: "",
-      backgroundColor: "",
+      title: "Mystery",
+      icon: <GiLoveMystery className="text-5xl text-[#ED3833]"></GiLoveMystery>,
+      backgroundColor: "bg-[#F4E6E5]",
     },
     {
-      title: "",
-      icon: "",
-      backgroundColor: "",
+      title: "Science Fiction",
+      icon: <GiMaterialsScience className="text-5xl text-[#55CEEF]" />,
+      backgroundColor: "bg-[#E6F2F4]",
     },
     {
-      title: "",
-      icon: "",
-      backgroundColor: "",
+      title: "Health",
+      icon: <CiMedicalCase className="text-5xl text-[#F3953E]" />,
+      backgroundColor: "bg-[#FAF4EB]",
     },
   ];
   return (
@@ -36,15 +41,14 @@ const Featured = () => {
         </div>
       </div>
       <div className="grid grid-cols-4 gap-x-4 mt-8">
-        {categories.map((category) => {
+        {categories.map((category, i) => {
           return (
             <div
-              className={`flex items-center px-6 py-5 bg-[${category.backgroundColor}]`}
+              key={i}
+              className={`flex items-center px-6 py-5 ${category.backgroundColor}`}
             >
               <div className="px-6 py-5">
-                <i
-                  className={`${category.icon} text-5xl text-[${category.iconColor}] font-normal`}
-                ></i>
+                <div>{category.icon}</div>
                 <h3 className="text-lg tracking-normal line leading-5 mt-2 font-semibold">
                   {category.title}
                 </h3>

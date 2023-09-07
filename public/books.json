@@ -1,0 +1,72 @@
+[
+  {
+    "bookFormat": "kindle",
+    "bookName": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "price": "12.99",
+    "description": "A classic novel depicting the decadence and excess of the Jazz Age."
+  },
+  {
+    "bookFormat": "hardcover",
+    "bookName": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "price": "19.95",
+    "description": "A Pulitzer Prize-winning novel exploring themes of racial injustice and moral growth."
+  },
+  {
+    "bookFormat": "paperback",
+    "bookName": "1984",
+    "author": "George Orwell",
+    "price": "9.99",
+    "description": "A dystopian novel portraying a totalitarian society and the struggle for individuality."
+  },
+  {
+    "bookFormat": "ebook",
+    "bookName": "Harry Potter and the Sorcerer's Stone",
+    "author": "J.K. Rowling",
+    "price": "7.99",
+    "description": "The first book in the beloved Harry Potter series, chronicling the young wizard's adventures."
+  },
+  {
+    "bookFormat": "audiobook",
+    "bookName": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "price": "24.99",
+    "description": "An epic fantasy novel about Bilbo Baggins' journey to reclaim treasure guarded by a dragon."
+  },
+  {
+    "bookFormat": "kindle",
+    "bookName": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "price": "10.49",
+    "description": "A classic romance novel exploring themes of social class and love in 19th-century England."
+  },
+  {
+    "bookFormat": "hardcover",
+    "bookName": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "price": "18.99",
+    "description": "A coming-of-age novel following the experiences of a young man in New York City."
+  },
+  {
+    "bookFormat": "ebook",
+    "bookName": "The Lord of the Rings",
+    "author": "J.R.R. Tolkien",
+    "price": "14.99",
+    "description": "A high-fantasy epic detailing the quest to destroy a powerful ring and save Middle-earth."
+  },
+  {
+    "bookFormat": "paperback",
+    "bookName": "The Alchemist",
+    "author": "Paulo Coelho",
+    "price": "11.25",
+    "description": "A philosophical novel following a shepherd's journey to find his personal legend."
+  },
+  {
+    "bookFormat": "audiobook",
+    "bookName": "The Hunger Games",
+    "author": "Suzanne Collins",
+    "price": "21.50",
+    "description": "A dystopian novel where teenagers fight to the death in a televised event for survival."
+  }
+]

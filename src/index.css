@@ -1,8 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300&display=swap");
 :root {
   --themeColor: #ee5253;
   --secondaryColor: #f8eaec;
+  --optionalColor: #fdf6f6;
 }
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -16,17 +24,35 @@
   }
 }
 
+/* Swiper / Slider Related */
+
 .swiper-button-prev {
   color: var(--themeColor) !important;
+  /* width: 5px !important; */
 }
 
 .swiper-button-next {
   color: var(--themeColor) !important;
+  /* width: 5px !important; */
 }
 
-/* Optionally, change the color of the active bullet or button */
 .swiper-pagination-bullet-active {
   background-color: var(--themeColor) !important;
   border: black !important;
   padding: 2px;
+  /* width: 5px !important; */
+}
+
+.p-carousel .p-carousel-content .p-carousel-prev:focus,
+.p-carousel .p-carousel-content .p-carousel-next:focus {
+  box-shadow: 0 0 0 0 !important;
+}
+.p-carousel .p-carousel-content .p-carousel-prev:hover,
+.p-carousel .p-carousel-content .p-carousel-next:hover {
+  background-color: transparent !important;
+}
+.p-carousel .p-carousel-content .p-carousel-prev,
+.p-carousel .p-carousel-content .p-carousel-next {
+  width: 3rem;
+  height: 3rem;
 }

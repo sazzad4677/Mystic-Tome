@@ -5,6 +5,8 @@ export default {
     extend: {
       colors: {
         themeColor: `var(--themeColor)`,
+        secondaryColor: `var(--secondaryColor)`,
+        optionalColor: `var(--optionalColor)`,
       },
     },
   },
