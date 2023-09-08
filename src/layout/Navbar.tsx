@@ -2,10 +2,12 @@ import { AutoComplete } from "primereact/autocomplete";
 import { Menubar } from "primereact/menubar";
 import { useState } from "react";
 import Logo from "../assets/Logo.png";
+import Cart from "../pages/Cart";
 
 function Navbar() {
   const [value, setValue] = useState<string>("");
   const [items, setItems] = useState<string[]>([]);
+  const [visibleCart, setCartVisible] = useState<boolean>(false);
 
   const search = (event: { query: string }) => {
     setItems([...Array(10).keys()].map((item) => event.query + "-" + item));
@@ -13,7 +15,7 @@ function Navbar() {
   const navItems = [
     {
       label: "Home",
-      className: "font-semibold text-black",
+      className: "font-semibold text-black hover:!text-themeColor",
     },
     {
       label: "Fiction",
@@ -81,7 +83,10 @@ function Navbar() {
             <p className="hover:text-themeColor cursor-pointer px-2 md:px-4 flex items-center">
               <i className="pi pi-user"></i>
             </p>
-            <p className="hover:text-themeColor cursor-pointer px-2 md:px-4 flex items-center">
+            <p
+              className="hover:text-themeColor cursor-pointer px-2 md:px-4 flex items-center"
+              onClick={() => setCartVisible(true)}
+            >
               <i className="pi pi-shopping-cart"></i>
             </p>
           </div>
@@ -94,9 +99,10 @@ function Navbar() {
             model={navItems}
             start={start}
             end={end}
-            className="!bg-white !w-full border-r-0 border-l-0 border-t-0 px-2 md:px-14 "
+            className="!bg-white !w-full border-r-0 border-l-0 border-t-0 px-2 md:px-14"
           />
         </div>
+        <Cart visible={visibleCart} setVisible={setCartVisible} />
       </div>
     </div>
   );

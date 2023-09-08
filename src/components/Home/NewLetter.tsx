@@ -17,11 +17,7 @@ const NewsLetter = () => {
             />
           </div>
           <div>
-            <Button
-              title="Subscribe"
-              label="Subscribe"
-              className="bg-black hover:!bg-black"
-            />
+            <Button title="Subscribe" label="Subscribe" className="button" />
           </div>
         </div>
       </div>
